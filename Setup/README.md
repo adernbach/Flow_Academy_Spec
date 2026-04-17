@@ -30,7 +30,6 @@ Links are to places we have ordered hardware from previously, and are included s
  <img src="/app/static/images/SPEC_sled_mount.jpg" alt="3D printed sled" width="400" /><br>
 
 
-
 ## Hardware Installation
 In order to properly run the SPEC software, the IMU and camera need to be connected to the Pi.
 ##### 1. Wiring Diagram of Raspberry Pi and IMU
@@ -95,13 +94,13 @@ Select the operating system with or without the desktop. The desktop version is 
 <!--![Raspberry Pi installer 1](/app/static/images/RPi_imager_install_screen_1.png)-->
 
 ##### 2.  During the imaging setup, you will be asked to apply customization settings. Select Yes (or Edit settings if this is not the first time using the software).
-<img src="app/static/images/RPi_imager_install_OS_customisation_0.png" alt="raspberry pi imager, install customisation general tab" width="400" /><br>
+<img src="/app/static/images/RPi_imager_install_OS_customisation_0.png" alt="raspberry pi imager, install customisation general tab" width="400" /><br>
 <!--![Raspberry Pi installer 2](/app/static/images/RPi_imager_install_screen_2.png)-->
 ##### 3. Fill in all the fields in the General tab,and select Enable SSH with Use password authentication on the Services tab.
-<img src="app/static/images/RPi_imager_install_OS_customisation_1.png" alt="raspberry pi imager, install customisation general tab" width="400" /><br>
-<img src="app/static/images/RPi_imager_install_OS_customisation_2.png" alt="raspberry pi imager, install customisation general tab" width="400" /><br>
+<img src="/app/static/images/RPi_imager_install_OS_customisation_1.png" alt="raspberry pi imager, install customisation general tab" width="400" /><br>
+<img src="/app/static/images/RPi_imager_install_OS_customisation_2.png" alt="raspberry pi imager, install customisation general tab" width="400" /><br>
 ##### 4. When settings are complete, select Save and you will be prompted to create the image.
-<img src="app/static/images/RPi_imager_install_OS_customisation_3.png" alt="raspberry pi imager, install customisation general tab" width="400" /><br>
+<img src="/app/static/images/RPi_imager_install_OS_customisation_3.png" alt="raspberry pi imager, install customisation general tab" width="400" /><br>
 ##### 5. Power Up: This step assumes that you either have a monitor/keyboard/mouse plugged into the Pi, OR you have connected "headlessly" to the Pi. 
 Once the image has been created, plug everything into the Pi EXCEPT the power. Place the SD card into the Pi and insert the power cable from the official Raspberry Pi power supply. 
 ##### 6. Confirm Pi is connected to the internet via wifi, or plug in an ethernet cable.
@@ -132,7 +131,7 @@ It is <strong><mark>critical</mark></strong> to calibrate the camera and the IMU
   `time.sleep(2)' by changing the numeric value to be the number of seconds you want in between data taking. Save the file.
 - To make things easy, the 6 positions you can use are illustrated below:
 
-<img src="app/static/images/IMU_calib_positions.jpg" alt="IMU calibration positions" width="400" /><br>
+<img src="/app/static/images/IMU_calib_positions.jpg" alt="IMU calibration positions" width="400" /><br>
 - Run the calibration script `sudo python calibrate_imu.py`
   - The script walks you through placing the IMU/system in 6 different positions. When this step is finished, it will display the message "Accelerate calib success". Wait until the script completes calibration of the magnetometer (not used in SPEC, but done for completeness). When finished, you will see that the calibration data has been saved and loaded properly.
 - To test the results, run the IMU/misc/testimu.py script. This will output accelerations in x, y, z. If your system is upright and on a flat surface, you should expect outputs of something like this:
@@ -190,7 +189,7 @@ Acceleration in z (downward) should be about 9.8 m/s^2^ and the pitch and roll a
 - Log in with the user credentials you selected.
 - Proceed to Main Menu, Setup and Calibrations, and Camera Parameters.
 
-<img src="app/static/images/camera_parameters.png" alt="camera parameters" width="250" /><br>
+<img src="/app/static/images/camera_parameters.png" alt="camera parameters" width="250" /><br>
 - Fill in your sensor height, width and max resolution parameters. The reduced width and height should be set at 
 1920x1080 for best system performance, and is the maximum setting available. 
 - Fill in your full resolution pixel size in mm as provided in manufacturer specs.
